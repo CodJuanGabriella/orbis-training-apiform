@@ -6,7 +6,7 @@ Api para registrar datos de un formulario web, usando el siguiente stack de AWS:
 - Function Lambda https://aws.amazon.com/es/lambda/
 - DynamoDB https://aws.amazon.com/es/dynamodb/
 
-<img style="width:100%;" src="/doc/images/stack.png">
+<img src="/doc/images/stack.png">
 
 ### ¿Que incluye?
 
