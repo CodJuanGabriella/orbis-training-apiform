@@ -5,6 +5,7 @@ Api para registrar datos de un formulario web, usando el siguiente stack de AWS:
 - ApiGateway https://aws.amazon.com/es/api-gateway/
 - Function Lambda https://aws.amazon.com/es/lambda/
 - DynamoDB https://aws.amazon.com/es/dynamodb/
+- Cloudwatch https://aws.amazon.com/es/cloudwatch/
 
 <img src="/doc/images/stack.png">
 
@@ -44,15 +45,15 @@ upload.function.bucket  Sube la funcion lambda al bucket s3                     
 ### Empezando
 
 Ejecutar los siguientes pasos:
-* make build
-* make create.venv
-* make install.libs
+- make build
+- make create.venv
+- make install.libs
 
 ### Agregar/Eliminar librerias
 
 Esto se realiza en el archivo requirements.txt. Luego ejecutar el comando:
 
-* make install.libs
+- make install.libs
 
 ### Request Body
 
