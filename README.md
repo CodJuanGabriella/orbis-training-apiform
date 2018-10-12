@@ -1,31 +1,32 @@
-orbis-training-apiform
-======================
+# orbis-training-apiform
+
 Api para registrar datos de un formulario web, usando el siguiente stack de AWS:
 
-* ApiGateway https://aws.amazon.com/es/api-gateway/
-* Function Lambda https://aws.amazon.com/es/lambda/
-* DynamoDB https://aws.amazon.com/es/dynamodb/
+- ApiGateway https://aws.amazon.com/es/api-gateway/
+- Function Lambda https://aws.amazon.com/es/lambda/
+- DynamoDB https://aws.amazon.com/es/dynamodb/
 
+<img style="width:100%;" src="/doc/images/stack.png">
 
-¿Que incluye?
---------------
+### ¿Que incluye?
+
 * source Code (directorio app)
 * Dockerfile (directorio dev/Dockerfile)
 * Makefile
 
-Requerimientos
---------------
-* Docker
-* Cmake
+### Requerimientos
 
-Ayuda
------
-* make
-* make help
+- Docker
+- Cmake
 
-Comandos
---------
-```console
+### Ayuda
+
+- make
+- make help
+
+### Comandos
+
+```shell
 Target                 Help                                                        Usage
 ------                 ----                                                        -----
 build                   Construir imagen para development                          make build
@@ -40,26 +41,26 @@ update.function         Actualizar funcion lambda                               
 upload.function.bucket  Sube la funcion lambda al bucket s3                        make upload.function
 ```
 
-Empezando
-=========
+### Empezando
+
 Ejecutar los siguientes pasos:
 * make build
 * make create.venv
 * make install.libs
 
-Agregar/Eliminar librerias
-==========================
+### Agregar/Eliminar librerias
+
 Esto se realiza en el archivo requirements.txt. Luego ejecutar el comando:
 
 * make install.libs
 
-Request Body
-============
-```console
+### Request Body
+
+```shell
 POST /v1/api/form
 ```
 
-```console
+```shell
 {
   "subject": "----subject----",
   "email": "email@orbis.com.pe",
@@ -67,10 +68,10 @@ POST /v1/api/form
 }
 ```
 
-Response Body
--------------
+### Response Body
+
 Retorna 200 OK:
-```console
+```shell
 {
   "message": "record successfully",
   "data": {
